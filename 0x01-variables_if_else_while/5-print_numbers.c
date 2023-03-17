@@ -15,7 +15,7 @@ int main(void)
 	for (ch = 0 ; ch < 10 ; ch++)
 	{
 		/*change number to ascii */
-	putchar(ch+'0');
+	putchar(ch + '0');
 	}
 	putchar('\n');
 	return (0);
