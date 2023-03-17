@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int ch,te = 9;
+	int ch, te = 9;
 
 	for (ch = 0 ; ch <= te ; ch++)
 	{
