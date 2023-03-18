@@ -9,9 +9,9 @@ int main(void)
 {
 	int ch1, ch2;
 
-	for (ch1 = 0 ; ch1 < 10 ; ch1++)
+	for (ch1 = 0 ; ch1 <= 99 ; ch1++)
 	{
-		for (ch2 = 0 ; ch2 < 10 ; ch2++)
+		for (ch2 = 0 ; ch2 <= 99 ; ch2++)
 		{
 			if (ch1 != ch2 && ch1 < ch2)
 			{
