@@ -3,6 +3,8 @@
 /**
  *_islower - lowercasse alphabet a-z
  *
+ *@c: input of function
+ *
  * Return: 1 or 0
  */
 int _islower(int c)
