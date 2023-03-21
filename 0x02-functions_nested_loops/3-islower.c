@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet_x10 - print alphabet a-z 10 time
+ *_islower - lowercasse alphabet a-z
  *
- * Return: no return
+ * Return: 1 or 0
  */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
-		return(1);
-	return(0);
+		return (1);
+	return (0);
 }
