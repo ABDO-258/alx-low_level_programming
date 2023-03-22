@@ -18,5 +18,6 @@ int main(void)
 		}
 	} while (sum < 4000000);
 		printf("%lu", sum_of_even);
+		printf("\n");
 	return (0);
 }
