@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long long int n = 612852475143, z, x = 2;
+	long int n = 612852475143, z, x = 2;
 
 	while (n != 1)
 	{
@@ -20,5 +20,6 @@ int main(void)
 			x++;
 		}
 	}
-	printf("%lli\n", x);
+	printf("%li\n", x);
+	return (0);
 }
