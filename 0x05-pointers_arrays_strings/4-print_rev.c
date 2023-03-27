@@ -16,7 +16,7 @@ void print_rev(char *s)
 	{
 	}
 	/*print reverse string*/
-	for (length--; length != 0; length--)
+		for (length--; length >= 0; length--)
 	{
 		_putchar(s[length]);
 	}
