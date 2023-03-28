@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include"main.h"
 
 /**
- * puts_half - prints half a string
+ * print_array - prtint the values of an array
  *
- *@str:string
+ *@n:string
  *
  * Return: no return
 */
