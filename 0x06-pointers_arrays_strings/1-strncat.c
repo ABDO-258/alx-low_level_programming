@@ -1,8 +1,8 @@
 /**
- * _stnrcat - concatenates two strings with n 
+ * _strncat - concatenates two strings with n
  *
  *@dest:string destination
- *@n:number of character 
+ *@n:number of character
  *@src:string source
  *
  *Return:2 string in 1
