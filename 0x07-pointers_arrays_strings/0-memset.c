@@ -1,19 +1,19 @@
 /**
- *
- * *_memset - fill a string with a fixed value
+ * _memset - Fill a string with a fixed value
  *
  * @n:number of places to be filled
- * @b: value 
- * @s:pointer to 
+ * @b: value
+ * @s:pointer to string
  *
- * Return : string filled
+ * Return: (s) string filled
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
+	return (s);
 }
