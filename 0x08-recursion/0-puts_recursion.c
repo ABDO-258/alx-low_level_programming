@@ -1,7 +1,9 @@
+#include <stdio.h>
+#include <unistd.h>
 /**
- *_puts_recursion - print a string in recursion 
+ *_puts_recursion - print a string in recursion
  *
- * @s poiter to string 
+ * @s:pointer to string
  *
  * Return: no return
  */
