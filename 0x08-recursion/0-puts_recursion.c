@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 /**
  *_puts_recursion - print a string in recursion
  *
