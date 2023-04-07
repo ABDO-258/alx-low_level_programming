@@ -6,7 +6,7 @@
  *@argc: argument counter
  *@argv: pointer to array o argument
  *
- *Return:  1 if error 
+ *Return:1 if error
  *
  */
 int main(int argc, char *argv[])
