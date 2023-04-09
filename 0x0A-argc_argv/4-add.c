@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 int _isdigit(char arg[]);
+
 
 /**
  *main - program to add positive number
@@ -37,6 +39,14 @@ int main(int argc, char *argv[])
 	printf("%d\n", result);
 	return (0);
 }
+/**
+ *_isdigit - Chek if the argument is a number
+ *
+ *@arg:the argument
+ *
+ *Return: 0 if number or 1 if not
+ *
+ */
 
 int _isdigit(char arg[])
 {
