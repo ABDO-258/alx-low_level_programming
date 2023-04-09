@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+int _isdigit(char arg[]);
+
 /**
  *main - program to add positive number
  *
@@ -21,16 +24,30 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(*argv[i]))
+		if (_isdigit(argv[i]) == 0)
 		{
 			result += atoi(argv[i]);
 		}
-		else if (!isdigit(*argv[i]))
+		else
 		{
 		printf("Error\n");
 		return (1);
 		}
 	}
 	printf("%d\n", result);
+	return (0);
+}
+
+int _isdigit(char arg[])
+{
+	int i, length = strlen(arg);
+
+	for (i = 0; i < length; i++)
+	{
+		if (!isdigit(arg[i]))
+		{
+			return (1);
+		}
+	}
 	return (0);
 }
