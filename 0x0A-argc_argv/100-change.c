@@ -18,8 +18,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
 	arg = atoi(argv[1]);
 	if (arg <= 0)
 		printf("0\n");
@@ -38,7 +36,6 @@ int main(int argc, char *argv[])
 				arg -= 1;
 			count++;
 		}
-	}
 	printf("%i\n", count);
 	return (0);
 }
