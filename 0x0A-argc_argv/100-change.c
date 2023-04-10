@@ -19,8 +19,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	arg = atoi(argv[1]);
-	if (arg < 0)
+	if (arg <= 0)
+	{
 		printf("0\n");
+		return (0);
+	}
 	else
 		while (arg > 0)
 		{
