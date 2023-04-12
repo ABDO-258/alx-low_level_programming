@@ -8,6 +8,11 @@
  */
 char *_strdup(char *str)
 {
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	int i = 0, length;
 	char *a;
 
@@ -17,10 +22,6 @@ char *_strdup(char *str)
 	}
 	a = (char *)malloc(sizeof(char) * (length + 1));
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	while (str[i] != '\0')
 	{
 		a[i] = str[i];
