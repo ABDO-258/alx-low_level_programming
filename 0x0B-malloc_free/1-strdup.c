@@ -8,14 +8,13 @@
  */
 char *_strdup(char *str)
 {
+	int i = 0, length;
+	char *a;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	int i = 0, length;
-	char *a;
-
 	for (length = 0; str[length] != '\0'; length++)
 	{
 		;
