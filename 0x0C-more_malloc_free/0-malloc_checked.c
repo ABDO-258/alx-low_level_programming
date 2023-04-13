@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 /**
  * malloc_checked - allocate memmory using malloc
  *
@@ -11,8 +13,7 @@ void *malloc_checked(unsigned int b)
 	
 	a = malloc(b);
 
-	if (a == NULL)
-	
+	if (!a)
 		exit (98);
 	
 	return (a);
