@@ -9,12 +9,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *a;
+	void *adr;
 	
-	a = malloc(b);
+	adr = malloc(b);
 
-	if (!a)
-		exit (98);
-	
-	return (a);
+	if (!adr)
+	{
+		exit(98);
+	}
+	return (adr);
 }
