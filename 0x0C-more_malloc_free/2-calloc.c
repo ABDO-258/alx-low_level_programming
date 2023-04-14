@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "main.h"
 /**
  *_memset - Fill a string with a fixed value
  *
@@ -21,7 +22,7 @@ char *_memset(char *s, char b, unsigned int n)
 	return (s);
 }
 /**
- * _alloc - allocate memory for array
+ * _calloc - allocate memory for array
  * @nmemb: size of array
  * @size:type size
  *
