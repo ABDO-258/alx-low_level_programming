@@ -2,6 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ *_memset - Fill a string with a fixed value
+ *
+ * @n:number of places to be filled
+ * @b: value
+ * @s:pointer to string
+ *
+ *Return: (s) string filled
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
+/**
  * _alloc - allocate memory for array
  * @nmemb: size of array
  * @size:type size
@@ -17,6 +36,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	a = malloc(nmemb * size);
 	if (a == NULL)
 		return (NULL);
-	memset(a, 0, nmemb * size);
+	_memset(a, 0, nmemb * size);
 	return (a);
 }
