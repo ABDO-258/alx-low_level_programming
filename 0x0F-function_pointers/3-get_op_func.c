@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+/**
+*get_op_func -function to select the function per operator
+*
+*@s:inbut operator
+*
+*Return: one of the operator function 
+*/
 
 int (*get_op_func(char *s))(int, int)
 {
@@ -21,4 +28,4 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 	return (NULL);
-} 
+}
