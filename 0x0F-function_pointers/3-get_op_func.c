@@ -7,7 +7,7 @@
 *
 *@s:inbut operator
 *
-*Return: one of the operator function 
+*Return: one of the operator function
 */
 
 int (*get_op_func(char *s))(int, int)
