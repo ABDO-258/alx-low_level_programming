@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
 *print_list - print a linked list
 *
