@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*free_listintt-free a linked list
+*free_listint-free a linked list
 *
 *@head: pointer to linked list
 *
