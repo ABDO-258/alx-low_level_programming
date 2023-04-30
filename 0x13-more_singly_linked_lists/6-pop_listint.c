@@ -1,9 +1,10 @@
 #include "lists.h"
 /**
-*free_listint2-free a linked list
+*pop_listint-delete the head node of a linked list and return its data n
 *
 *@head: pointer to linked list
 *
+*Return:the data of the head node
 */
 int pop_listint(listint_t **head)
 
@@ -18,7 +19,7 @@ int pop_listint(listint_t **head)
 		*head = (*head)->next;
 		free(node);
 	}
-	else 
+	else
 		return (0);
 	return (m);
 }
