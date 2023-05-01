@@ -3,7 +3,6 @@
 *sum_listint-sum of data   of a linked list
 *
 *@head: pointer to linked list
-*@index: the place of the node
 *
 *Return:the data of the node
 */
