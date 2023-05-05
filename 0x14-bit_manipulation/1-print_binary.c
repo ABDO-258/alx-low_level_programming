@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 	unsigned long int mask = 1, length = 0;
 	unsigned long int m;
 
-	if(n == 0)
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 		length++;
 	}
 	length--;
-	
+
 	if (length > 0)
 		mask <<= (length);
 	while (mask > 0)
