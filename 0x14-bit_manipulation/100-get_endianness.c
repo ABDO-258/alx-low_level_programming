@@ -5,13 +5,13 @@ int get_endianness(void)
 
         while (num1 != 0)
         {
-                num1 >>= 1;
-                num2 >>= 1;
+                num1 <<= 1;
+                num2 <<= 1;
                 count++;
         }
         if (count != 1)
-                return (0);
-        else
                 return (1);
+        else
+                return (0);
 
 }
