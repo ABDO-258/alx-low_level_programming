@@ -24,6 +24,9 @@ int get_bit(unsigned long int n, unsigned int index)
 		length++;
 	}
 	length--;
+
+	if (index > length)
+		return (-1);
 	if (length > 0)
 		mask <<= (length);
 	while (mask > 0)
