@@ -25,10 +25,15 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	op_to = open(av[2],  O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (op_to == -1)
+		{
+			dprintf(2, "Error: Can't write to %s", av[2]);
+			exit(99);
+		}
 	while ((reading = read(op_from, buffer, 1024)) > 0)
 	{
 		writing = write(op_to, buffer, reading);
-		if (writing != reading || op_to == -1)
+		if (writing != reading)
 		{
 			dprintf(2, "Error: Can't write to %s", av[2]);
 			exit(99);
