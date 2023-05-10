@@ -33,7 +33,7 @@ int main(int ac, char **av)
 	while ((reading = read(op_from, buffer, 1024)) > 0)
 	{
 		writing = write(op_to, buffer, reading);
-		if (writing != reading)
+		if (writing == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", av[2]);
 			exit(99);
