@@ -15,19 +15,19 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	op_from = open(av[1], O_RDONLY);
 	if (op_from == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s", av[1]);
+		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 	op_to = open(av[2],  O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (op_to == -1)
 		{
-			dprintf(2, "Error: Can't write to %s", av[2]);
+			dprintf(2, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
 	while ((reading = read(op_from, buffer, 1024)) > 0)
@@ -35,10 +35,12 @@ int main(int ac, char **av)
 		writing = write(op_to, buffer, reading);
 		if (writing != reading)
 		{
-			dprintf(2, "Error: Can't write to %s", av[2]);
+			dprintf(2, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
 	}
+	/*dprintf(1, "reading value %d\n", reading);
+	dprintf(1, "writing value %d\n", writing);*/
 	closing = close(op_from);
 	if (closing == -1)
 	{
