@@ -42,7 +42,7 @@ int error_handler(int error, char *arg, int value_of_fd)
 */
 int main(int ac, char **av)
 {
-	int writing, reading, op_from, op_to, closing;
+	int writing, reading, op_from, op_to, close_from, close_to;
 	char buffer[1024];
 
 	if (ac != 3)
@@ -71,13 +71,13 @@ int main(int ac, char **av)
 			error_handler(99, av[2], 0);
 		}
 	}
-	closing = close(op_from);
-	if (closing == -1)
+	close_from = close(op_from);
+	if (close_from == -1)
 	{
 		error_handler(100, NULL, op_from);
 	}
-	closing = close(op_to);
-	if (closing == -1)
+	close_to = close(op_to);
+	if (close_to == -1)
 	{
 		error_handler(100, NULL, op_to);
 	}
