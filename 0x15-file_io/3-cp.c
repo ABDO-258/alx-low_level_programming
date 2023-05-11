@@ -59,7 +59,7 @@ int main(int ac, char **av)
 	{
 		error_handler(99, av[2], 0);
 	}
-	while ((reading = read(op_from, buffer, 1024)) > 0)
+	while ((reading = read(op_from, buffer, 1024)) != 0)
 	{
 		if (reading == -1)
 		{
