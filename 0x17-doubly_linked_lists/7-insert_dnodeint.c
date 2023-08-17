@@ -41,12 +41,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		}
 		current = current->next;
 	}
-	count--;
 	/*printf("count = %d\n",count);*/
 	if (count == idx)
 	{
 		/*printf("count is %d\n",count);*/
-		return(add_dnodeint_end(&(*h), n));
+		return (add_dnodeint_end(&(*h), n));
 	}
 	return (NULL);
 }
