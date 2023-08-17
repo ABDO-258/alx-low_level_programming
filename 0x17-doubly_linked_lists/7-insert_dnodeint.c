@@ -14,14 +14,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int count = 0;
 	dlistint_t *current, *new_node;
 
-	
+	if (h == NULL)
+		return (NULL);
+
 	current = (*h);
 
 	if (idx == 0)
 	{
 		add_dnodeint(&(*h), n);
 	}
-
 	while (current != NULL)
 	{
 		count++;
@@ -38,10 +39,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			return (new_node);
 		}
 		current = current->next;
-
 	}
-	if (count == (idx))
+	count--;
+	/*printf("count = %d\n",count);*/
+	if (count == idx)
+	{
+		/*printf("count is %d\n",count);*/
 		add_dnodeint_end(&(*h), n);
-
+	}
 	return (NULL);
 }
