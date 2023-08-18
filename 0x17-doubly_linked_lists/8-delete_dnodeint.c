@@ -24,22 +24,21 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(current);
 		return (1);
 	}
-
-    while (current != NULL && count < index )
+	while (current != NULL && count < index)
 	{
 		current = current->next;
 		count++;
 	}
 
-    if (current == NULL)
-        return (-1);
+	if (current == NULL)
+		return (-1);
 /* update the previous node next to skip the current node*/
-    if (current->prev)
-        current->prev->next = current->next;
+	if (current->prev)
+		current->prev->next = current->next;
 /* update the nex node previuos to skip the current node*/
-    if (current->next)
-        current->next->prev = current->prev;
+	if (current->next)
+		current->next->prev = current->prev;
 
-    free(current);
-    return (1);
+	free(current);
+	return (1);
 }
